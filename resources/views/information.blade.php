@@ -70,7 +70,6 @@
 <div class="container mt-5">
     <div class="row">
       <?php
-      // Ambil data dari model Posting
       $posts = \App\Models\Posting::all();
   
       foreach ($posts as $post) {
@@ -80,7 +79,7 @@
           <div class="card">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="{{ asset('storage/public/images-post/' . $post->image_url) }}" class="img-fluid rounded-start" alt="...">
+                <img src="{{ asset('storage/images-post/' . $post->image_url) }}" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -98,6 +97,7 @@
     </div>
   </div>
   
+
 
   <div class="footer-section">
     <footer class="footer">
@@ -132,6 +132,7 @@
       <p>&copy;2023 | All Rights Reserved</p>
     </footer>
   </div>
+  
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>

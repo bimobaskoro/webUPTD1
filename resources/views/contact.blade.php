@@ -66,8 +66,10 @@
   </div>
 
    <div class="contact-section">
+    <center>
+
       <div class="row mt-5">
-        <div class="col-md-6 d-flex align-items-center justify-content-end"> <!-- Tambahkan kelas d-flex, align-items-center, dan justify-content-center di sini -->
+        <div class="col-sm-6 d-flex align-items-center justify-content-end"> <!-- Tambahkan kelas d-flex, align-items-center, dan justify-content-center di sini -->
           <div class="card " style="width: 18rem;">
             <img src="/img/Kantor UPT.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -75,55 +77,56 @@
               <p class="card-text justify-content-center align-items-center d-flex">
                 DP3AP2KB <br>a
                 UPTD PPA</p>
+              </div>
             </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center mt-3">
+              <!-- Logo 1 -->
+              <img class="icon" src="img/phone-call.png" alt="Logo 2">
+              <div class="text-left">
+                <h5>Telepon</h5>
+                <p>085274342797</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mt-3">
+              <!-- Logo 2 -->
+              <img class="icon" src="img/web.png" alt="Logo 2">
+              <div class="text-left">
+                <h5>Website</h5>
+                <p>www.p3ap2kb.tanjabbarat.go.id</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mt-3">
+              <!-- Logo 3 -->
+              <img class="icon" src="img/instagram (1).png" alt="Logo 2">
+              <div class="text-left">
+                <h5>Instagram</h5>
+                <p> @dp3ap2kb.tanjabbarat & @upt_ppa_tanjabbarat</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mt-3">
+              <!-- Logo 4 -->
+              <img class="icon" src="img/play (1).png" alt="Logo 4">
+              <div class="text-left">
+                <h5>Aplikasi</h5>
+                <p> Aplikasi Sinpan</p>
+              </div>
+            </div>    
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="d-flex align-items-center mt-3">
-            <!-- Logo 1 -->
-            <img class="icon" src="img/phone-call.png" alt="Logo 2">
-            <div class="text-left">
-              <h5>Telepon</h5>
-              <p>085274342797</p>
-            </div>
-          </div>
-          <div class="d-flex align-items-center mt-3">
-            <!-- Logo 2 -->
-            <img class="icon" src="img/web.png" alt="Logo 2">
-            <div class="text-left">
-              <h5>Website</h5>
-              <p>www.p3ap2kb.tanjabbarat.go.id</p>
-            </div>
-          </div>
-          <div class="d-flex align-items-center mt-3">
-            <!-- Logo 3 -->
-            <img class="icon" src="img/instagram (1).png" alt="Logo 2">
-            <div class="text-left">
-              <h5>Instagram</h5>
-              <p> @dp3ap2kb.tanjabbarat & @upt_ppa_tanjabbarat</p>
-            </div>
-          </div>
-          <div class="d-flex align-items-center mt-3">
-            <!-- Logo 4 -->
-            <img class="icon" src="img/play (1).png" alt="Logo 4">
-            <div class="text-left">
-              <h5>Aplikasi</h5>
-              <p> Aplikasi Sinpan</p>
-            </div>
-          </div>    
+      </center>
+      </div>
+      
+      
+      <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
         </div>
-      </div>
-   </div>
-
-  <div class="footer-section">
-    <footer class="footer">
-      <div class="waves">
-        <div class="wave" id="wave1"></div>
-        <div class="wave" id="wave2"></div>
-        <div class="wave" id="wave3"></div>
-        <div class="wave" id="wave4"></div>
-      </div>
-      <ul class="social-icon">
+        <ul class="social-icon">
         <li class="social-icon__item"><a class="social-icon__link" href="#">
           <ion-icon name="logo-google-playstore"></ion-icon>
           </a></li>
@@ -147,7 +150,7 @@
       </ul>
       <p>&copy;2023 | All Rights Reserved</p>
     </footer>
-  </div>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>

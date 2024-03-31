@@ -25,7 +25,7 @@
 <body>
   <nav class="navbar fixed-top navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <img class="logo" src="img/logo.png">
+      <img class="logo" src="../img/logo.png">
       <span class="navbar-text ml-3">
         UNIT PELAKSANAAN TEKNIS PERLINDUNGAN PEREMPUAN DAN ANAK
     </span>
@@ -70,8 +70,8 @@
   <div class="container mt-5">
     <div class="row">
         <div class="col-md-12">
-            <img src="{{ asset('storage/public/images-post/' . $posting->image_url) }}" class="img-fluid">
-            <p>{{ $posting->description }}</p>
+            <img src="{{ asset('storage/images-post/' . $posting->image_url) }}" class="img-fluid">
+            <p class="mt-5">{{ $posting->description }}</p>
             <!-- Tambahkan elemen HTML lainnya sesuai kebutuhan -->
         </div>
     </div>

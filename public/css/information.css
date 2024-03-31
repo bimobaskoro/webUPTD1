@@ -66,6 +66,11 @@ body {
       gap: 24px;
     }
     
+    .desc{
+      overflow: hidden; /* Mengatasi overflow */
+      text-overflow: ellipsis; /* Menampilkan elipsis untuk teks yang terpotong */
+      white-space: nowrap; /* Mencegah teks untuk melompat ke baris baru */
+    }
    
     
     .sr-only:not(:focus):not(:active) {
@@ -137,23 +142,7 @@ body {
       background: green;
     }
     
-    .footer-section{
-      height: 30vh;
-    }
-    
-    .footer {
-      position: relative;
-      width: 100%;
-      margin-top: 21%;
-      background: #3E4149;
-      min-height: 100px;
-      padding: 62px 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    
+  
     .social-icon,
     .menu {
       position: relative;
@@ -197,10 +186,24 @@ body {
     
     
     .footer{
-      position: absolute; /* Menjadikan posisi footer relatif */
+      margin-top: 70px;
       bottom: 0; /* Menempatkan footer di bagian bawah konten */
       width: 100%; /* Footer menjangkau lebar layar */
     }
+
+    .footer {
+      width: 100%;
+      background: #3E4149;
+      min-height: 100px;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative; /* Mengubah posisi ke relatif */
+      bottom: 0; /* Menghapus bottom: 0 */
+    }
+    
     .footer p {
       color: #fff;
       margin: 15px 0 10px 0;
@@ -271,7 +274,6 @@ body {
     max-width: 960px; /* Lebar maksimum artikel untuk layar dengan lebar 1200px */
   }
   .footer{
-    position: absolute; /* Menjadikan posisi footer relatif */
     bottom: 0; /* Menempatkan footer di bagian bawah konten */
     width: 100%; /* Footer menjangkau lebar layar */
   }
@@ -287,7 +289,6 @@ body {
     font-size: 80px; /* Ukuran font teks overlay untuk layar dengan lebar 768px */
   }
   .footer{
-    position: absolute; /* Menjadikan posisi footer relatif */
     bottom: 0; /* Menempatkan footer di bagian bawah konten */
     width: 100%; /* Footer menjangkau lebar layar */
   }
@@ -322,7 +323,6 @@ body {
     object-fit: cover;
   }
   .footer{
-    position: absolute; /* Menjadikan posisi footer relatif */
     bottom: 0; /* Menempatkan footer di bagian bawah konten */
     width: 100%; /* Footer menjangkau lebar layar */
   }
@@ -340,7 +340,6 @@ body {
 
   .footer {
     padding: 30px 10px; /* Padding footer untuk layar dengan lebar 375px */
-    position: absolute; /* Menjadikan posisi footer relatif */
     bottom: 0; /* Menempatkan footer di bagian bawah konten */
     width: 100%; /* Footer menjangkau lebar layar */
   }
@@ -354,7 +353,6 @@ body {
     display: none;
   }
   .footer{
-    position: absolute; /* Menjadikan posisi footer relatif */
     bottom: 0; /* Menempatkan footer di bagian bawah konten */
     width: 100%; /* Footer menjangkau lebar layar */
   }

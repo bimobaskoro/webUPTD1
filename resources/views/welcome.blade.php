@@ -68,7 +68,7 @@
     </div>
   </div>
 
-  <div class="about-section">
+  <div class="about-section mb-5">
     <div class="about-container text-center">
       <div class="about-title mt-5">ABOUT</div>
       <div class="about-text mt-3">
@@ -78,9 +78,8 @@
       <button type="button" class="btn btn-outline-secondary mt-3">Learn More</button>
     </div>
   </div>
-
   <div class="information-section">
-    <div class="information-title mt-5 mb-">INFORMATION</div>
+    <div class="information-title pt-5 mb-">INFORMATION</div>
     <section class="pt-5 pb-5">
         <div class="container">
             <div class="row">
@@ -94,32 +93,35 @@
                     </a>
                 </div>
                 <div class="col-12">
-                  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        @foreach($posts as $key => $post)
-                            <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
-                                <div class="row">
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                          <img src="{{ asset('storage/images-post' . $post->image_url) }}" class="img-fluid rounded-start" alt="...">
-                                          <div class="card-body">
-                                                <h4 class="card-title">{{ $post->title }}</h4>
-                                                <p class="card-text">{{ $post->description }}</p>
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" id="carousel-inner">
+                            @php
+                                $chunks = $posts->chunk(3);
+                            @endphp
+                            @foreach($chunks as $key => $chunk)
+                                <div class="carousel-item{{ $key === 0 ? ' active' : '' }}">
+                                    <div class="row">
+                                        @foreach($chunk as $post)
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img src="{{ asset('storage/images-post/' . $post->image_url) }}" class="img-fluid rounded-start" alt="Deskripsi Gambar">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">{{ $post->title }}</h4>
+                                                        <p class="card-text">{{ $post->description }}</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
+                                        @endforeach
                                     </div>
                                 </div>
-                            </div>
-                        @endforeach
+                            @endforeach
+                        </div>
                     </div>
-                </div>
-                
                 </div>
             </div>
         </div>
     </section>
 </div>
-
 
     <footer class="footer">
       <div class="waves">
